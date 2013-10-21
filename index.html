@@ -16,27 +16,27 @@
         <div class="container">
             <div class="slides" style="opacity:0;">
                 <div class="slide">
-                    <img src="http://placehold.it/700x350" />
+                    <img src="http://placehold.it/800x530" />
                 </div>
 
                 <div class="slide">
-                    <img src="http://placehold.it/700x350" />
+                    <img src="http://placehold.it/800x730" />
                 </div>
 
                 <div class="slide">
-                    <img src="http://placehold.it/700x350" />
+                    <img src="http://placehold.it/800x330" />
                 </div>
 
                 <div class="slide">
-                    <img src="http://placehold.it/700x350" />
+                    <img src="http://placehold.it/800x930" />
                 </div>
 
                 <div class="slide">
-                    <img src="http://placehold.it/700x350" />
+                    <img src="http://placehold.it/800x130" />
                 </div>
             </div>
-            <a id="prev">&larr;</a>
-            <a id="next">&rarr;</a>
+            <span id="prev">&larr;</span>
+            <span id="next">&rarr;</span>
         </div>
         
 
@@ -45,7 +45,10 @@
         <script src="jquery.kevinslides.js"></script>
 
         <script type="text/javascript">
-            $(".slides").kevinSlides();
+            $(".slides").kevinSlides({
+                width:800,
+                height:530,
+            });
             window.setTimeout(function() {
                 $(".slides").animate({
                     opacity:1

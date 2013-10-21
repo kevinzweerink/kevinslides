@@ -44,6 +44,11 @@ $.fn.kevinSlides = function(config) {
 					__this.removeClass("current");
 				}
 			});
+
+			var newHeight = _this.children(".current").children("img").outerHeight();
+			_this.css({
+				height:newHeight
+			})
 		}
 
 		//Position stuff

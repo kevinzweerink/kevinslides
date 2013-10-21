@@ -1,8 +1,15 @@
+.slides {
+	-webkit-transition: height .25s ease;
+	-moz-transition: height .25s ease;
+	-o-transition: height .25s ease;
+	transition: height .25s ease;
+}
+
 .slide {
-	-webkit-transition: left .25s ease;
-	-moz-transition: left .25s ease;
-	-o-transition: left .25s ease;
-	transition: left .25s ease;
+	-webkit-transition: left .25s ease .25s;
+	-moz-transition: left .25s ease .25s;
+	-o-transition: left .25s ease .25s;
+	transition: left .25s ease .25s;
 }
 
 #prev, #next {
