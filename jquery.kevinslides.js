@@ -45,9 +45,10 @@ $.fn.kevinSlides = function(config) {
 				}
 			});
 
-			var newHeight = _this.children(".current").children("img").outerHeight();
+			var imgHeight = _this.children(".current").children("img").outerHeight();
+			var newHeight = ( imgHeight != 0 ) ? imgHeight : settings.height;
 			_this.css({
-				height:(newHeight === 0) ? settings.height : newHeight;
+				height:newHeight
 			})
 		}
 
