@@ -47,7 +47,7 @@ $.fn.kevinSlides = function(config) {
 
 			var newHeight = _this.children(".current").children("img").outerHeight();
 			_this.css({
-				height:newHeight
+				height:(newHeight === 0) ? settings.height : newHeight;
 			})
 		}
 
