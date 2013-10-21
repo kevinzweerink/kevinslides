@@ -1,0 +1,10 @@
+.slide {
+	-webkit-transition: left .25s ease;
+	-moz-transition: left .25s ease;
+	-o-transition: left .25s ease;
+	transition: left .25s ease;
+}
+
+#prev, #next {
+	cursor:pointer;
+}
